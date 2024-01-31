@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            height: 50px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 550px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-left: 500px;
+            
+        }
+        #header-text{
+            transition: transform 0.3s; 
+        }
+        #header-text:hover{
+            color: red;
+            transform: scale(1.1);
+        }
+        .hero-section{
+            height: 200px;
+            width: 550px;
+            margin-left: 500px;
+            margin-top: 20px;
+        }
+        li{
+            margin-top: 10px;
+        }
+        li:nth-child(odd){
+            color: blue;
+        }
+        li:nth-child(even){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h4 id="header-text">Tech Stacks for Full-Stack Web Development</h4>
+    </div>
+    <div class="hero-section">
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Node.js, Express.js, MongoDB</li>
+            <li>React, Angular, Vue.js</li>
+            <li>Python, Django, PostgreSQL</li>
+            <li>Ruby, Ruby on Rails, SQLite</li>
+        </ul>
+    </div>
+</body>
+</html>

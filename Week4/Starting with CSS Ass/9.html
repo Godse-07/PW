@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            font-size: 1.9rem;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-section{
+            height: 200px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input[type=text]{
+            background-color: aqua;
+        }
+        input[type=tel]{
+            background-color: yellow;
+        }
+        input[type=email]{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p>Student registration form</p>
+    </div>
+    <div class="hero-section">
+        <div class="form">
+            <label for="sname">Name : </label>
+            <input type="text" name="sname" placeholder="Enter name">
+            <br>
+            <label for="smobile">Mobile : </label>
+            <input type="tel" name="smobile" placeholder="Enter correct mobile number">
+            <br>
+            <label for="smail">Email : </label>
+            <input type="email" name="smail" placeholder="Enter email address">
+            <br>
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+</body>
+</html>
