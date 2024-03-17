@@ -1,0 +1,127 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+header{
+    height: 65px;
+    width: 100%;
+    display: flex;
+}
+
+.h1{
+    display: flex;
+    width: 65%;
+}
+
+.h2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+}
+
+.h2 > h4{
+    color: rgb(50, 190, 245);
+    font-weight: 100;
+}
+
+.b1 , .b2{
+    height: 50%;
+}
+
+.b1{
+    background-color: white;
+    width: 75px;
+    color: rgb(50, 190, 245);
+    border-color: rgb(235, 235, 235);
+}
+
+.b2{
+    background-color: white;
+    width: 120px;
+    border-color: rgb(235, 235, 235);
+    background-color: rgb(41, 189, 247);
+    color: aliceblue;
+}
+
+.h1 > h5{
+    padding-top: 25px;
+    padding-left: 1px;
+    font-size: 15px;
+    font-weight: 50;
+}
+
+img{
+    padding-left: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+.hr-shadow{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 1px;
+}
+
+.hero-section{
+    display: flex;
+    margin: 20px;
+}
+
+.hero-section > .div1{
+    height: 100vh;
+    width: 50%;
+}
+
+.hero-section > .div2{
+    height: 100vh;
+    width: 50%;
+}
+
+.text{
+    padding: 100px 100px 50px 100px;
+}
+
+.text > p{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.text2 > p{
+    height: 50px;
+    padding-left: 100px;
+    padding-bottom: 40px;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button1,.button2{
+    width: 50%;
+}
+
+.buttons > .button1{
+    width: 300px;
+    height: 50px;
+    
+}
+
+#b1{
+    padding: 10px;
+    background-color: rgb(41, 189, 247);
+    color: white;
+    width: 200px;
+    margin-left: 80px;
+}
+
+.button2 > a{
+    text-decoration: none;
+}
+
+.div2 > img{
+    height: 490px;
+    width: 90%;
+}

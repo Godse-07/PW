@@ -1,0 +1,13 @@
+body {
+    background-color: rgba(82, 82, 82, 0.699);
+    color: rgb(237, 117, 119); /* Setting text color */
+}
+
+header {
+    height: 50px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
