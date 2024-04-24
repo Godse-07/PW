@@ -1,6 +1,22 @@
 body {
-    background-color: rgba(82, 82, 82, 0.699);
-    color: rgb(237, 117, 119); /* Setting text color */
+    background-color: rgb(23, 23, 23);
+}
+
+#h2{
+    color: rgb(237, 117, 119);
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    height: 600px;
+    width: 75%;
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: space-around;
 }
 
 header {
@@ -10,4 +26,65 @@ header {
 
 h2 {
     text-align: center;
+}
+
+
+.html1 {
+    height: 100%;
+    width: 300px;
+    background-color: rgb(0, 126, 128);
+    border: 5px solid black;
+}
+
+.css1 {
+    height: 100%;
+    width: 300px;
+    background-color: rgb(234, 111, 168);
+    border: 5px solid black;
+}
+
+.js {
+    height: 100%;
+    width: 300px;
+    background-color: #fff;
+}
+
+.img1{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.img1 > img{
+    height: 200px;
+    width: auto;
+}
+
+.text1 > p{
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+#text{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.css1 > .text1 {
+    padding: 10px;
+}
+
+#js{
+    width: 80%;
+    border-radius: 50%;
+}
+
+.js{
+    background-color: rgb(66, 55, 164);
+    border: 5px solid black;
+}
+
+.js > .text1{
+    padding: 10px;
 }
