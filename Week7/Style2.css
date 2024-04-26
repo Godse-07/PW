@@ -1,0 +1,96 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+}
+
+header{
+    height: 70px;
+    width: 100%;
+    /* background-color: lightcoral; */
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    font-weight: bolder;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo > img{
+    height: 55px;
+    padding-right: 250px;
+}
+
+.home{
+    margin-left: 300px;
+}
+
+.contact{
+    margin-right: 300px;
+}
+
+.login > button{
+    width: 90px;
+    font-weight: bolder;
+    background-color: lightgreen;
+    font-size: 0.7rem;
+    margin-bottom: 21px;
+}
+
+.border{
+    /* border: 1px solid black; */
+}
+
+.content{
+    height: 600px;
+    width: 85%;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.first{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first > h1{
+    font-size: 3rem;
+    color: black;
+    font-weight: bolder;
+}
+
+.first > p{
+    height: 100px;
+    width: 90%;
+}
+
+.first > button{
+    height: 50px;
+    width: 150px;
+}
+
+.second{
+    background-color: yellow;
+}
+
+.second > img{
+    height: 100%;
+    width: 70%;
+    /* object-fit:contain; */
+}
+
+#padding_up{
+    padding: 20px;
+}
+
+button{
+    margin-top: 25px;
+}
