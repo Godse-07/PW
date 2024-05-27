@@ -1,0 +1,165 @@
+body{
+    height: 225vh;
+    border: 4px solid black;
+}
+
+.d_one{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    height: 70px;
+    width: 100%;
+    /* background-color: lightcoral; */
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    font-weight: bolder;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo > img{
+    height: 55px;
+    padding-right: 250px;
+}
+
+.home{
+    margin-left: 300px;
+}
+
+.contact{
+    margin-right: 300px;
+}
+
+.login > button{
+    width: 90px;
+    font-weight: bolder;
+    background-color: lightgreen;
+    font-size: 0.7rem;
+    margin-bottom: 21px;
+}
+
+.border{
+    /* border: 1px solid black; */
+}
+
+.content{
+    height: 600px;
+    width: 85%;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.first{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first > h1{
+    font-size: 3rem;
+    color: black;
+    font-weight: bolder;
+}
+
+.first > p{
+    height: 100px;
+    width: 90%;
+}
+
+.first > button{
+    height: 50px;
+    width: 150px;
+}
+
+.second{
+    background-color: yellow;
+}
+
+.second > img{
+    height: 100%;
+    width: 70%;
+    /* object-fit:contain; */
+}
+
+#padding_up{
+    padding: 20px;
+}
+
+button{
+    margin-top: 25px;
+}
+
+.d_two{
+    height: 450px;
+    background-color: #2B1E16;
+    margin: 20px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.foot_one > img,
+.foot_two > img,
+.foot_three > img {
+    height: 300px;
+}
+
+
+h3{
+    font-weight: bolder;
+    color: white;
+}
+
+p{
+    font-weight: bolder;
+    color: #754220;
+}
+
+.d_three{
+    height: 350px;
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-column-gap: 100px;
+    padding: 20px 20px 20px 20px;
+}
+
+.common{
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.img_pic{
+    height: 65%;
+    width: 100%;
+}
+
+.img_pic > img{
+    /* margin-top: 30px; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom: 1px solid black;
+}
+
+.img_content{
+    text-align: center;
+}
+
+.img_content > h2{
+    font-weight: bolder;
+    
+}
