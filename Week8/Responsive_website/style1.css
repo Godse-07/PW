@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.hero_section{
+    height: 100px;
+    width: 98%;
+    background-color: #242B2E;
+    display: flex;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.logo{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img{
+    height: 120px;
+}
+
+.information{
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information > p{
+    margin-right: 40px;
+    font-size: bolder;
+    color: white;
+}
+
+.button{
+    height: 100%;
+    width: 205px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button > button{
+    height: 30px;
+    width: 100px;
+    font-size: bolder;
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.nav_icon{
+    display: none; 
+    visibility: hidden;
+}
+
+.name{    
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .nav_logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_icon {
+      visibility: visible;
+      color: white;
+      margin-right: 20px;
+      display: flex;
+      justify-content: end;
+    }
+    .information,.button>button{
+        display: none;
+    }
+    .button{
+        width: 100%;
+    }
+}
+  
+
