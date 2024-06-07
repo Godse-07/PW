@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%    ;
+    width: 100vw;
+    border: 4px solid black;
+}
+
+.body1{
+    display: flex;
+    justify-content: center;
+}
+
+.hero_section{
+    height: 100px;
+    width: 98%;
+    background-color: #242B2E;
+    display: flex;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.logo{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img{
+    height: 120px;
+}
+
+.information{
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information > p{
+    margin-right: 40px;
+    font-size: bolder;
+    color: white;
+}
+
+.button{
+    height: 100%;
+    width: 205px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button > button{
+    height: 30px;
+    width: 100px;
+    font-size: bolder;
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.nav_logo{
+    display: none; 
+}
+
+.name{    
+    display: none;
+}
+
+
+.content{
+    height: calc(100vh - 90px);
+    width: 98%;
+    margin: 10px 10px 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+}
+
+.left > h2{
+    margin-top: 80px;
+    padding-left: 50px;
+    margin-bottom: 5px;
+}
+
+.left > h1{
+    font-size: 8vh;
+    font-weight: bolder;
+    color: rgba(10, 169, 255, 0.704);
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+.left > h4{
+    font-size: 3.2vh;
+    font-weight: bolder;
+    color: rgba(10, 169, 255, 0.704);
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+
+.span_element{
+    margin-top: 20px;
+    display: flex;
+}
+
+span{
+    font-size: 2.2vh;
+    padding-left: 50px;
+    font-weight: bolder;
+}
+
+.logos{
+    display: grid;
+    grid-template-columns: 100px 100px; 
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;   
+    grid-template-areas: 
+    "sbm sib csb "
+    "federal bob bob";
+}
+
+.logos > img{
+    height: 50px;
+    width: 100px;
+    padding-left: 50px;
+}
+
+#item1{
+    grid-area: sbm;
+}
+
+#item2{
+    grid-area: sib;
+}
+
+#item3{
+    grid-area: csb;
+}
+
+#item4{
+    grid-area: federal;
+}
+
+#item5{
+    grid-area: bob;
+}
+
+.right{
+    height: 100%;
+    width: 50%;
+}
+
+.right > video{
+    height: 94%;
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 740px) {
+    
+    .nav_logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_logo{
+        display: block;
+    }
+
+    .content{
+        height: calc(100% - 90px);
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .logos > img{
+        height: 50px;
+        width: 100px;
+        padding-left: 20px;
+    }
+    
+
+    .content > .left{
+        width: 100%;
+    }
+
+    .content > .right{
+        width: 78%;
+    }
+
+    .nav_logo {
+      visibility: visible;
+      color: white;
+      margin-right: 20px;
+      display: flex;
+      justify-content: end;
+      font-size: 4.5vh;
+    }
+    .information,.button>button{
+        display: none;
+    }
+    .button{
+        width: 100%;
+    }
+}
+  
+
