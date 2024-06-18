@@ -1,0 +1,59 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    color: white;
+}
+
+.content {
+    height: 50vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.four_box {
+    height: 100%;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.one > p {
+    line-height: 2;
+    margin-left: 0px;
+}
+
+.four > input, button {
+    margin-top: 15px;
+    margin-bottom: 2px;
+    height: 50px; 
+    width: 100%;
+}
+
+button {
+    background-color: skyblue;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+p {
+    margin: 20px 20px 20px 20px;
+}
+
+@media screen and (max-width: 1050px) {
+    .four_box {
+        flex-direction: column;
+        padding-left: 200px;
+        align-items: start;
+    }
+
+    .content {
+        height: 100%;
+    }
+
+    .one {
+        margin-top: 50px;
+    }
+}
