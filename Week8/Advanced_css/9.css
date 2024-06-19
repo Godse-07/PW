@@ -1,0 +1,28 @@
+.content {
+    height: 65vh;
+    width: 40vw;
+    background-color: #242b2e;
+    color: #6e7274;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    padding: 5px 20px;
+}
+
+img{
+    height: 20vh;
+}
+
+h1 {
+    color: white;
+    font-weight: bolder;
+}
+
+.content{
+    border-radius: 50px;
+}

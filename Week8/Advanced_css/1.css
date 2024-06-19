@@ -1,0 +1,11 @@
+.box {
+    height: 65vh;
+    width: 60vw;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, skyblue, blue);
+}
+

@@ -1,0 +1,27 @@
+.box {
+    height: 65vh;
+    width: 50vw;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    height: 20vh;
+    width: 20vh;
+    /* background-color: blueviolet; */
+    border-radius: 50%;
+    border: 10px solid grey;
+    animation: rotate 1s linear infinite;
+    border-color: black grey grey grey;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
