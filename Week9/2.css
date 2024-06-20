@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.black{
+    height: 75vh;
+    width: 40vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.content{
+    height: 70vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#select_list{
+    width: 85%;
+}
+
+input{
+    width: 90%;
+    margin-left: 20px;
+}
+
+h4{
+    margin-left: 20px;
+}
+
+select{
+    width: 90%;
+    margin-left: 20px;
+}
+
+#SignUp{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2    rem;
+}
