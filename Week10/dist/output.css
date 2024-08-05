@@ -702,6 +702,10 @@ video {
   border-left-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.bg-custom-bg {
+  background-color: rgba(31, 41, 55, 1);
+}
+
 .bg-green-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
@@ -710,10 +714,6 @@ video {
 .bg-indigo-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(165 180 252 / var(--tw-bg-opacity));
-}
-
-.bg-custom-bg {
-  background-color: rgba(31, 41, 55, 1);
 }
 
 .p-3 {
