@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+    <h1 class="Text">
+
+    </h1>
+    <button>
+        press me
+    </button>
+</body>
+<script>
+    let button = document.querySelector('button');
+    let text = document.querySelector('.Text');
+    let body = document.querySelector('body');
+    button.addEventListener('click', function() {
+        if(body.style.backgroundColor == 'white'){
+            body.style.backgroundColor = 'black';
+            text.innerHTML = 'This is Dark Mode';
+            text.style.color = 'white';
+        } else {
+            body.style.backgroundColor = 'white';
+            text.innerHTML = 'This is White Mode';
+            text.style.color = 'black';
+        }
+    });
+</script>
+</html>

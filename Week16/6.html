@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const heading = document.createElement('h1');
+    heading.textContent = 'Choose an option:';
+    document.body.appendChild(heading); 
+
+    const dropdown = document.createElement('select');
+    document.body.appendChild(dropdown);
+
+    const options = ['Option 1', 'Option 2', 'Option 3'];
+
+    for (const option of options) {
+        const optionElement = document.createElement('option');
+        optionElement.value = option;
+        optionElement.text = option;
+        dropdown.appendChild(optionElement);
+    }
+</script>
+</html>

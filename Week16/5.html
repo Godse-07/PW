@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+    <style>
+        img {
+            display: block;
+            margin: 20px 10px;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <button id="button">Toggle me</button>
+    <img src="./FC.jpg" alt="fc barcelona">
+</body>
+<script>
+    let button = document.querySelector('#button');
+    let img = document.querySelector('img');
+    let h1 = document.querySelector('h1');
+
+    button.addEventListener('click', function() {
+        if(img.style.display == 'block') {
+            img.style.display = 'none';
+            h1.innerHTML = 'Image is hidden';
+        } else {
+            img.style.display = 'block';
+            h1.innerHTML = 'Image is visible';
+        }
+    });
+</script>
+</html>

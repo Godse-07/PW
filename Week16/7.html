@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7</title>
+</head>
+<style>
+    #suggestionList {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        max-width: 200px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+    #suggestionList li {
+        padding: 8px;
+        cursor: pointer;
+    }
+    #suggestionList li:hover {
+        background-color: #e1e1e1;
+    }
+</style>
+</head>
+<body>
+<input type="text" name="text" id="text" placeholder="Start typing...">
+<ul id="suggestionList"></ul>
+
+<script>
+    
+    let options = ["java", "javac", "javascript", "oops", "python", "uber", "urekon"];
+    
+    const inputField = document.getElementById('text');
+    const suggestionList = document.getElementById('suggestionList');
+    
+    inputField.addEventListener('input', function() {
+        const inputValue = inputField.value.toLowerCase();
+        
+        suggestionList.innerHTML = '';
+        
+        const filteredOptions = options.filter(option => 
+            option.toLowerCase().includes(inputValue)
+        );
+        
+        filteredOptions.forEach(option => {
+            const listItem = document.createElement('li');
+            listItem.textContent = option;
+            suggestionList.appendChild(listItem);
+            
+            listItem.addEventListener('click', function() {
+                inputField.value = option;
+                suggestionList.innerHTML = '';
+            });
+        });
+
+        if (filteredOptions.length === 0) {
+            suggestionList.innerHTML = '<li>No matches found</li>';
+        }
+    });
+</script>
+</body>
+</html>

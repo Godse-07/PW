@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        .work {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        h2 {
+            margin: 0 20px;
+        }
+
+        i {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <div class="work">
+        <i class="ri-add-line"></i>
+        <h2>0</h2>
+        <i class="ri-subtract-line"></i>
+    </div>
+</body>
+<script>
+    let add = document.querySelector('.ri-add-line');
+    let subtract = document.querySelector('.ri-subtract-line');
+    let h2 = document.querySelector('h2');
+    let count = 0;
+
+    add.addEventListener('click', function() {
+        count++;
+        h2.innerHTML = count;
+    });
+
+    subtract.addEventListener('click', function() {
+        count--;
+        if(count < 0) {
+            count = 0;
+            alert("Counter is going beyond 0");
+        }
+        h2.innerHTML = count;
+    });
+</script>
+</html>
